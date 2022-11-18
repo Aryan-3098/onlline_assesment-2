@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #2C5A8C;
+}
+#con{
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+#btn{
+    float: right;
+}
+button{
+    font-size: 20px;
+    background-color: #2C5A8C;
+    border: 2px solid #FFFFFF;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    transition: all 1s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+#b_c{
+    background-color:#000000 ;
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+    overflow: hidden;
+    transition: all 1s;
+}
+#m_img img{
+    height: 10rem;
+    float: right;
+    position: relative;
+    right: 3.9rem;
+    top: 1rem;
+    transition: all 1s;
+}
+#a_img img{
+    height: 16rem;
+    position: relative;
+    left: 1rem;
+    transition: all 1s;
+}
+#a_img{
+    animation-name: a_animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: all 1s;
+}
+#s_img img{
+    height: 100px;
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 23rem;
+    right: 5rem;
+    transition: all 1s;
+}
+#s_img{
+    animation-name: s_animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transition: all 1s;
+}
+#dots{
+    position: absolute;
+    bottom: 70%;
+}
+.dot{
+    background-color: #FFFFFF;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+#dot1{
+    position: relative;
+    left: 150px;
+    top: 20px;
+}
+#dot2{
+    position: relative;
+    left: 50px;
+    top: 120px;
+}
+#dot3{
+    position: relative;
+    left: 90px;
+    top: 260px;
+}
+#dot4{
+    position: relative;
+    left: 180px;
+    top: 280px;
+}
+#dot5{
+    position: relative;
+    left: 250px;
+    top: 220px;
+}
+@media only screen and (max-width:530px) and (min-width:300px){
+    #btn{
+        float: none;
+        margin-left: 70%
+    }
+    #b_c{
+        height: 20rem;
+        width: 20rem;
+    }
+    #a_img img{
+        height: 13rem;
+    }
+    #m_img img{
+        height: 8rem;
+    }
+    #s_img img{
+        height: 5rem;
+        bottom: 18rem;
+        right: 1rem;
+    }
+    #dots{
+        bottom: 60%;
+    }
+}
+@keyframes a_animation{
+    0%{
+        transform: translateY(25px);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(25px);
+    }
+}
+@keyframes s_animation{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(450px);
+    }
+}
